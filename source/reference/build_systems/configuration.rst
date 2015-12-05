@@ -91,7 +91,7 @@ receive any of these options.
     the variant will show up
     under **Tools | Build System**.
     Sublime Text will automatically
-    bind the 'Run' task to :kbd:`Ctrl+Shift+B`.
+    bind the build tasks list (if there are variants) to :kbd:`Ctrl+Shift+B`.
 
     See Variants_.
 
@@ -169,8 +169,8 @@ of a build system with variants:
 
 Given these settings,
 :kbd:`Ctrl+B` would run the *date* command,
-:kbd:`Crtl+Shift+B` would run the Python interpreter
-and the remaining variants would appear
+:kbd:`Crtl+Shift+B` would pops‑up a list of build tasks: the main one at the top and the variants, below;
+the variants would also appear
 in the :ref:`Command Palette <ext-command-palette-overview>`
 as :samp:`Build: {name}` whenever the build system was active.
 
@@ -301,7 +301,7 @@ the following key bindings:
 ===================  =========================
 :kbd:`Ctrl+B`        Run default build task
 :kbd:`F7`            Run default build task
-:kbd:`Ctrl+Shift+B`  Run 'Run' build task
+:kbd:`Ctrl+Shift+B`  Pops‑up a list of build tasks or run the default one if there's no variants
 :kbd:`Ctrl+Break`    Cancel running build task
 ===================  =========================
 
